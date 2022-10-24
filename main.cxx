@@ -1,16 +1,12 @@
+# Last edit 19-Jun-2022
 # Specify the minimum version of CMake
 cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
-
-# Specify project title
-project(OpenADAS)
 
 # Setup for Qt GUI
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-# Set GPU architecture. This decides which instruction set will be used for GPU code.
-set(GPU_ARCHS 75)  ## config your GPU_ARCHS,See [here](https://developer.nvidia.com/cuda-gpus) for finding what maximum compute capability your specific GPU supports.
 
 # Setup CMake
 set(CMAKE_BUILD_TYPE Debug)
